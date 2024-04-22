@@ -3,7 +3,8 @@ let button = document.querySelector(".task-write__container").lastElementChild;
 let list = document.querySelector(".task-list__items");
 
 button.addEventListener("click", function () {
-  list.innerHTML += `
+  if (input.value !== "") {
+    list.innerHTML += `
 <li class="task-list__items-item">
   <ion-icon name="checkmark-outline" class='icon icon-mark'></ion-icon>
 
@@ -11,7 +12,8 @@ button.addEventListener("click", function () {
  
   <ion-icon name="trash-outline" class='icon icon-trash'></ion-icon>
 </li>`;
-  input.value = "";
+    input.value = "";
+  }
 });
 
 list.addEventListener("click", function (event) {
