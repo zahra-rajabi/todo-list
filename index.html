@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="task-write">
+        <h1 class="heading">Your Plan:</h1>
+        <div class="task-write__container">
+          <input
+            type="text"
+            placeholder="Title..."
+            class="task-write__input"
+            autocomplete="off"
+          />
+          <button type="button" class="task-write__button">Add</button>
+        </div>
+      </div>
+      <div class="task-list">
+        <ul class="task-list__items"></ul>
+      </div>
+    </main>
+
+    <!-- here is js script -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+    <!---->
+  </body>
+</html>
